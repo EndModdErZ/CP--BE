@@ -15,4 +15,3 @@ world.events.entityHurt.subscribe(async function({hurtEntity,damageSource}){
 
   }
 });
-world.events.blockBreak.subscribe
