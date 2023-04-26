@@ -1,0 +1,26 @@
+{
+  "format_version":"1.19.50",
+  "minecraft:item":{
+    "description":{
+      "identifier":"emrz-croptopia:apple_juice",
+      "category":"equipment"
+    },
+    "components":{
+      "minecraft:max_stack_size":16,
+      "minecraft:use_duration":1.6,
+      "minecraft:use_animation":"drink",
+      "minecraft:food":{
+        "nutrition":5,
+        "saturation_modifier":0.6,
+        "can_always_eat":true,
+        "using_converts_to":"minecraft:glass_bottle"
+      },
+      "minecraft:icon":{
+        "texture":"croptopia:apple_juice"
+      },
+      "minecraft:creative_category":{
+        "parent":"itemGroup.name.miscFood"
+      }
+    }
+  }
+}
