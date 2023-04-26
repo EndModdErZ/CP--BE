@@ -1,0 +1,23 @@
+{
+  "format_version":"1.19.50",
+  "minecraft:item":{
+    "description":{
+      "identifier":"emrz-croptopia:toast",
+      "category":"equipment"
+    },
+    "components":{
+      "minecraft:use_duration":1.6,
+      "minecraft:use_animation":"eat",
+      "minecraft:food":{
+        "nutrition":7,
+        "saturation_modifier":0.6
+      },
+      "minecraft:icon":{
+        "texture":"croptopia:toast"
+      },
+      "minecraft:creative_category":{
+        "parent":"itemGroup.name.miscFood"
+      }
+    }
+  }
+}
