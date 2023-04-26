@@ -3,4 +3,5 @@ function getItem (entity,slot = entity.selectedSlot){
   .getComponent("inventory")
   ?.container
   ?.getItem(slot);
+  if (!item) return {};
 }
