@@ -3,5 +3,10 @@ function getItem (entity,slot = entity.selectedSlot){
   .getComponent("inventory")
   ?.container
   ?.getItem(slot);
-  if (!item) return {};
+  if (!item) return {
+    "typeId":"minecraft:air",
+    "amount":0
+  };
+  return item;
 }
+export { getItem };
