@@ -7,9 +7,10 @@ world.events.entityHurt.subscribe(async function({hurtEntity,damageSource}){
   
   switch (getItem(damagingEntity).typeId) {
     case 'emrz-croptopia:frying_pan':
-     
+     let {x,y,z} = damagingEntity.viewDirection();
+     hurtEntity.applyKnockback(x,z,2,0.6)
+      world.playSound("pan.clang",{"location":hurtEntity.location,"pitch":0.88,"volume":1});
       break;
-    
     default:
 
   }
