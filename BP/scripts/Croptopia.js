@@ -12,6 +12,5 @@ world.events.entityHurt.subscribe(async function({hurtEntity,damageSource}){
       hurtEntity.applyKnockback(x,z,2,0.6);
       break;
     default:
-
   }
 });
